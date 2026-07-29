@@ -15,7 +15,7 @@ const entrySchema = new mongoose.Schema(
     status: { type: String, default: '', trim: true },
     remarks: { type: String, default: '', trim: true },
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
 
 module.exports = mongoose.model('Entry', entrySchema);
